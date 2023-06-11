@@ -7,5 +7,12 @@ function nameCalculator(event) {
   const lastName = event.target.lastName.value;
   const fullName = firstName + lastName;
 
-  document.querySelector("h2").innerText = "Your Name is " + fullName + " Letters Long"
+  if (fullName.length <= 1) {
+    document.querySelector("h2").innerText = "Your Name is " + fullName.length + " Letter Long"
+  
+  } else {
+    document.querySelector("h2").innerText = "Your Name is " + fullName.length + " Letters Long"
+    
+  }
+
 }
